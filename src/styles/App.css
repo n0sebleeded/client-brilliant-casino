@@ -1,0 +1,58 @@
+html, .App{
+  height: 100%;
+  background-color: white;
+}
+body, #root, .grid {
+  min-height: 100vh;
+}
+
+.service-name {
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30pt;
+}
+
+.description-text {
+  color: whitesmoke;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10pt;
+}
+
+@media(min-width: 760px) {
+  .links {
+    font-size: 14pt;
+    color: white;
+    margin: 3%;
+    text-decoration: none;
+  }
+}
+@media(max-width: 760px) {
+  .links {
+    font-size: 12pt;
+    color: white;
+    margin: 3%;
+    text-decoration: none;
+  }
+}
+@media(max-width: 640px) {
+  .links {
+    font-size: 10pt;
+    color: white;
+    margin: 3%;
+    text-decoration: none;
+  }
+}
+@media(max-width: 5px) {
+  .links {
+    font-size: 10pt;
+    color: white;
+    margin: 3%;
+    text-decoration: none;
+  }
+}
+
+.active {
+  cursor: default;
+  color: #E1CE87;
+  text-decoration: none;
+}
