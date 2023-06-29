@@ -26,34 +26,13 @@ const ResponsiveImage = styled(Image)`
     height: 50px; 
     margin-left: 10%;
   }`
-const SlotMachine = styled(Image)`
-  @media(min-width: 1410px) {
-    scale: 55%;
-    rotate: 13rad;
-    flex-grow: 1;
-  }
-  @media(max-width: 1410px) {
-    scale: 40%;
-    rotate: 13rad;
-    flex-grow: 1;
-  }
-  @media(max-width: 1024px) {
-    scale: 25%;
-    rotate: 13rad;
-    flex-grow: 1;
-  }
-  @media(max-width: 640px) {
-    scale: 20%;
-    rotate: 13rad;
-    flex-grow: 1;
-  }`
 
 const FooterText = styled(Text)`
   @media(min-width: 960px) {
-    font-size: 16pt;
+    font-size: 12pt;
   }
   @media(max-width: 960px) {
-    font-size: 12pt;
+    font-size: 10pt;
   }
   @media(max-width: 960px) {
     font-size: 8pt;
@@ -62,12 +41,12 @@ const FooterText = styled(Text)`
 
 const MainText = styled(Text)`
   @media(min-width: 960px) {
-    font-size: 34pt;
+    font-size: 28pt;
     line-height: normal;
   }
   @media(max-width: 960px) {
-    font-size: 20pt;
+    font-size: 16pt;
     line-height: normal;
   }`
 
-export { ResponsiveText, ResponsiveImage, SlotMachine, FooterText, MainText }
+export { ResponsiveText, ResponsiveImage, FooterText, MainText }

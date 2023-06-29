@@ -1,20 +1,85 @@
 import React from 'react';
-import {ResponsiveImage, ResponsiveText} from "./mediaComponent";
+import { ResponsiveImage, ResponsiveText } from "./mediaComponent";
 import logo from "../logo.svg";
 import { Box } from "grommet";
 import { NavLink, Outlet } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Header = () => {
+    const AnimatedRespText = motion(ResponsiveText);
+    const AnimatedRespImg = motion(ResponsiveImage);
+    const AnimatedNavLinks = motion(NavLink);
+
     return (
         <>
             <Box gridArea="leftHeader" background="#E1CE87" direction="row" align="center">
-                <ResponsiveImage src={logo}></ResponsiveImage>
-                <ResponsiveText size="3xl">Brilliant</ResponsiveText>
+                <AnimatedRespImg
+                    src={logo}
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                />
+                <AnimatedRespText
+                    size="3xl"
+                    style={{fontFamily: 'Roboto Mono, monospace', fontWeight: '600'}}
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                >
+                    Brilliant
+                </AnimatedRespText>
             </Box>
             <Box gridArea="rightHeader" background="black" direction="row" justify="end" align="center">
-                <NavLink to="/reg" className="links">Register / Sign Up</NavLink>
-                <NavLink to="/" className="links">Home</NavLink>
-                <NavLink to="/about" className="links" style={{marginRight: "10%", marginLeft: "3%"}}>About us</NavLink>
+                <AnimatedNavLinks
+                    to="/log"
+                    className="links"
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                >
+                    Sign in
+                </AnimatedNavLinks>
+
+                <AnimatedNavLinks
+                    to="/reg"
+                    className="links"
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                >
+                    Sign Up
+                </AnimatedNavLinks>
+                <AnimatedNavLinks
+                    to="/"
+                    className="links"
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                >
+                    Home
+                </AnimatedNavLinks>
+                <AnimatedNavLinks
+                    to="/about"
+                    className="links"
+                    style={{marginRight: "10%", marginLeft: "1%"}}
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                >
+                    About us
+                </AnimatedNavLinks>
             </Box>
             <>
                 <Outlet />

@@ -8,45 +8,46 @@ body, #root, .grid {
 
 .service-name {
   color: black;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30pt;
 }
 
 .description-text {
   color: whitesmoke;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 10pt;
+}
+
+.links {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.links:hover {
+  color: #E1CE87;
+  transition: 0.5s;
 }
 
 @media(min-width: 760px) {
   .links {
-    font-size: 14pt;
+    font-size: 10pt;
     color: white;
-    margin: 3%;
+    margin: 1%;
     text-decoration: none;
   }
 }
-@media(max-width: 760px) {
+@media(max-width: 770px) {
   .links {
-    font-size: 12pt;
+    font-size: 8pt;
     color: white;
-    margin: 3%;
+    margin: 1%;
     text-decoration: none;
   }
 }
 @media(max-width: 640px) {
   .links {
-    font-size: 10pt;
+    font-size: 6pt;
     color: white;
-    margin: 3%;
-    text-decoration: none;
-  }
-}
-@media(max-width: 5px) {
-  .links {
-    font-size: 10pt;
-    color: white;
-    margin: 3%;
+    margin: 1%;
     text-decoration: none;
   }
 }
@@ -56,3 +57,28 @@ body, #root, .grid {
   color: #E1CE87;
   text-decoration: none;
 }
+
+.form_field input{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12pt;
+  border-bottom: none !important;
+}
+
+.btn {
+  background-color: transparent;
+  border: solid 1px transparent;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12pt;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 25px;
+  color: white;
+}
+
+.btn:hover {
+  transition: 1s;
+  border: solid 1px white;
+  border-radius: 15px;
+}
+
+
