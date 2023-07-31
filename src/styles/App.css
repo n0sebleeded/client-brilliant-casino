@@ -81,4 +81,14 @@ body, #root, .grid {
   border-radius: 15px;
 }
 
+.timeTextPlay {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40pt;
+}
 
+.timeTextPlayVert {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12pt;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

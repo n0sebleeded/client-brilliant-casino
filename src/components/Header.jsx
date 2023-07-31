@@ -4,6 +4,7 @@ import logo from "../logo.svg";
 import { Box } from "grommet";
 import { NavLink, Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
+import GridStyled from "./GridStyled";
 
 const Header = () => {
     const AnimatedRespText = motion(ResponsiveText);
@@ -11,7 +12,7 @@ const Header = () => {
     const AnimatedNavLinks = motion(NavLink);
 
     return (
-        <>
+        <GridStyled>
             <Box gridArea="leftHeader" background="#E1CE87" direction="row" align="center">
                 <AnimatedRespImg
                     src={logo}
@@ -47,17 +48,6 @@ const Header = () => {
                 </AnimatedNavLinks>
 
                 <AnimatedNavLinks
-                    to="/reg"
-                    className="links"
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
-                >
-                    Sign Up
-                </AnimatedNavLinks>
-                <AnimatedNavLinks
                     to="/"
                     className="links"
                     layout
@@ -84,7 +74,7 @@ const Header = () => {
             <>
                 <Outlet />
             </>
-        </>
+        </GridStyled>
     );
 };
 

@@ -3,6 +3,9 @@ import { Box } from "grommet";
 import CardGroup from "./CardGroup";
 import { motion } from "framer-motion";
 import '../styles/App.css';
+import StartBtn from "./btn/StartBtn";
+import '../styles/Button.sass';
+
 const MainPage = () => {
     const AnimatedText = motion(MainText);
     const AnimatedFooterText = motion(FooterText);
@@ -31,6 +34,7 @@ const MainPage = () => {
                     >
                         ASP.NET & REACTJS
                     </AnimatedText>
+                    <StartBtn />
             </Box>
             <Box gridArea="main" background="black" justify="end" align="center">
                     <CardGroup preset={'lobby'} />
