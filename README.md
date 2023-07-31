@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+## Важно! :crocodile:
+Данный репозиторий предоставляет пример реализации API для виртуального казино с использованием виртуальной валюты и служит исключительно в образовательных целях. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Азартные игры на реальные деньги запрещены во многих юрисдикциях и могут быть незаконными. Этот проект не предназначен для использования с реальной валютой и не рекомендуется для создания азартных игровых платформ.
 
-## Available Scripts
+BrilliantCasinoAPI разработан с целью демонстрации основных принципов работы с API для управления виртуальным казино. Вместо реальной валюты используется виртуальная валюта и фиктивные ставки. Пользователи могут использовать этот проект для изучения и разработки подобных систем, основанных на виртуальной валюте.
+Мы настоятельно рекомендуем соблюдать все местные законы и правила, связанные с азартными играми. Пожалуйста, учитывайте, что использование реальной валюты в связи с этим проектом невозможно и не поддерживается.
 
-In the project directory, you can run:
+Авторы и поддерживающие лица этого проекта не несут ответственности за неправильное использование или нарушение законодательства, связанного с азартными играми, приложений реального казино или других аналогичных проектов, созданных на основе данного репозитория.
+## Будьте разумны и ответственны! :raised_hands:
 
-### `npm start`
+# :game_die: BrilliantCasinoAPI [![GitHub](https://img.shields.io/badge/GitHub-sabexzero-000000?logo=github)](https://github.com/sabexzero) [![GitHub](https://img.shields.io/badge/GitHub-n0sebleeded-000000?logo=github)](https://github.com/n0sebleeded)
+Это репозиторий, который представляет собой клиентскую часть виртуального казино.
+Я начинающий разработчик, поэтому, если Вы найдете какие-то ошибки и недочеты в коде, я был бы рад услышать и поработать над ними! Проект выступает исключительно как pet-проект с неординарной задумкой, которая позволяет применить множество различных инструментов разработки.    
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Для разработки применялись несколько технологий и библиотек: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### React
+React - это JavaScript-библиотека для создания пользовательских интерфейсов. Она используется в этом проекте для построения компонентов и управления динамическим содержимым приложения.
 
-### `npm test`
+### react-router-dom
+Библиотека react-router-dom предоставляет набор инструментов для реализации маршрутизации в React-приложениях. Она позволяет создавать навигацию между различными страницами и компонентами в приложении.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Grommet
+Grommet - это библиотека компонентов пользовательского интерфейса, разработанная для React-приложений. Она предоставляет готовые стилизованные компоненты, которые можно использовать для создания современного и отзывчивого интерфейса.
 
-### `npm run build`
+### Sass
+Sass (Syntactically Awesome Style Sheets) - это язык расширения CSS, который добавляет дополнительные возможности и функциональность к обычным таблицам стилей. В этом проекте Sass используется для более удобной и гибкой разработки стилей.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Three.js
+Three.js - это JavaScript-библиотека для создания и отображения трехмерной графики в веб-браузере. Она позволяет создавать и манипулировать 3D-объектами, применять материалы и освещение, а также добавлять анимацию к сценам.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### React-three/fiber
+React-three/fiber - это библиотека, которая предоставляет React-обертку над Three.js. Она позволяет использовать Three.js в синтаксисе React, что упрощает интеграцию трехмерной графики в React-приложения. react-three/fiber предоставляет декларативный подход к созданию и обновлению 3D-сцен, используя компоненты React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### React-three/drei
+react-three/drei - это коллекция готовых компонентов и хуков для react-three/fiber. Она предоставляет удобные и готовые к использованию компоненты, такие как камеры, освещение, материалы и многое другое. react-three/drei упрощает создание сложных и интерактивных 3D-сцен, предоставляя высокоуровневые абстракции над Three.js.
 
-### `npm run eject`
+> Использование библиотек react-three/fiber и react-three/drei позволяет более эффективно работать с Three.js в контексте React-приложений. Они предоставляют удобный и декларативный подход к созданию и управлению трехмерной графикой, что облегчает разработку и поддержку проекта.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Framer Motion
+Framer Motion - это библиотека анимации для React. Она предоставляет простой и мощный способ добавления анимаций к компонентам React, включая перемещение, масштабирование, поворот и многое другое. Framer Motion позволяет создавать плавные и живые пользовательские интерфейсы.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### gltfjsx
+gltfjsx - это инструмент командной строки для преобразования файлов формата glTF в компоненты JSX (JavaScript XML). Он упрощает процесс интеграции 3D-моделей, созданных в формате glTF, в React-приложения. Сгенерированные компоненты JSX могут быть использованы для отображения и управления 3D-моделями в проекте.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Эти технологии и библиотеки являются основными компонентами этого проекта и предоставляют необходимые инструменты для разработки интерфейса, маршрутизации, стилей, анимации и работы с трехмерной графикой.
+## Установка и настройка :crystal_ball:
+1. Клонируйте репозиторий на свой локальный компьютер:
+```bash
+git clone https://github.com/your-username/BrilliantCasinoAPI.git
+```
+2. Установите необходимые зависимости, используя пакетный менеджер:
+```bash
+cd BrilliantCasinoAPI
+npm i package.json
+```
+3. Запустите проект
+```bash
+npm start
+```
+## Клиентская часть проекта находится на начальном этапе разработки :egg:
+Если вы хотитет ознакомится с будущим функционалом сервиса, то можете перейти по ссылке на репозиторий моего коллеги [![GitHub](https://img.shields.io/badge/GitHub-СlientBrilliantСasino-blue?style=flat-square&logo=github)](https://github.com/sabexzero/BrilliantCasinoAPI) , занимающимся серверной частью. В его репозитории вы сможете рассмотреть какие игры и задумки будут реализованы в будущем
+## Вклад :rocket:
+Если вы хотите внести свой вклад в проект и поучаствовать в его создании, то пишите на любую почту снизу, мы будем рады всем!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Авторы :pencil2:
+Даниил Ахунзянов `devDanilAkhunzianov@outlook.com` `Frontend`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Виталий Кукса `vkuksa.tech@outlook.com` `Backend`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
