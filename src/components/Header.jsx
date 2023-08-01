@@ -24,7 +24,7 @@ const Header = () => {
                 />
                 <AnimatedRespText
                     size="3xl"
-                    style={{fontFamily: 'Roboto Mono, monospace', fontWeight: '600'}}
+                    style={{fontFamily: 'Peachi-bold, serif', fontWeight: '600'}}
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -61,7 +61,7 @@ const Header = () => {
                 <AnimatedNavLinks
                     to="/about"
                     className="links"
-                    style={{marginRight: "10%", marginLeft: "1%"}}
+                    style={{marginRight: "15%", marginLeft: "1%"}}
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

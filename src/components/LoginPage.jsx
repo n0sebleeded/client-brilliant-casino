@@ -18,7 +18,7 @@ const LoginPage = () => {
             <Box gridArea="leftmain" background="#E1CE87" justify="center" align="center">
                 <CardGroup preset={'warehouse'} />
                 <AnimatedFooterText
-                    style={{margin: "0 5%", textAlign: "center", fontFamily: 'Roboto Mono, monospace', color:"black"}}
+                    style={{margin: "0 5%", textAlign: "center", fontFamily: 'Peachi-bold, serif', color:"black"}}
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 0.5 }}

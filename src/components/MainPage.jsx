@@ -7,6 +7,7 @@ import StartBtn from "./btn/StartBtn";
 import '../styles/Button.sass';
 
 const MainPage = () => {
+
     const AnimatedText = motion(MainText);
     const AnimatedFooterText = motion(FooterText);
 
@@ -15,7 +16,7 @@ const MainPage = () => {
             <Box gridArea="leftmain" background="#E1CE87" justify="center" align="center">
                     <AnimatedText
                         color="#8d7a2f"
-                        style={{margin: "0 15%", fontFamily: 'Roboto Mono, monospace'}}
+                        style={{margin: "0 15%", fontFamily: 'Peachi-bold, serif'}}
                         layout
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -25,7 +26,7 @@ const MainPage = () => {
                     </AnimatedText>
                     <AnimatedText
                         color="black"
-                        style={{margin: "0 15%", fontFamily: 'Roboto Mono, monospace', fontWeight: '600'}}
+                        style={{margin: "0 15%", fontFamily: 'Peachi-bold, serif', fontWeight: '600'}}
                         layout
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -39,10 +40,10 @@ const MainPage = () => {
             <Box gridArea="main" background="black" justify="end" align="center">
                     <CardGroup preset={'lobby'} />
                     <AnimatedFooterText
-                        style={{margin: "0 5%", textAlign: "center", fontFamily: 'Roboto Mono, monospace'}}
+                        style={{margin: "0 5%", textAlign: "center", fontFamily: 'Peachi-bold, serif'}}
                         layout
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 0.3 }}
+                        animate={{ opacity: 0.15 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 2.5 }}
                     >

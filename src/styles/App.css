@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Peachi-bold;
+  src: url("../fonts/Peachi-Bold.otf");
+}
+
 html, .App{
   height: 100%;
   background-color: white;
@@ -8,18 +13,18 @@ body, #root, .grid {
 
 .service-name {
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Peachi-bold, serif;
   font-size: 30pt;
 }
 
 .description-text {
   color: whitesmoke;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Peachi-bold, serif;
   font-size: 10pt;
 }
 
 .links {
-  font-family: 'Roboto Mono', monospace;
+  font-family: Peachi-bold, serif;
 }
 
 .links:hover {
@@ -59,7 +64,7 @@ body, #root, .grid {
 }
 
 .form_field input{
-  font-family: 'Roboto Mono', monospace;
+  font-family: Peachi-bold, serif;
   font-size: 12pt;
   border-bottom: none !important;
 }
@@ -67,7 +72,7 @@ body, #root, .grid {
 .btn {
   background-color: transparent;
   border: solid 1px transparent;
-  font-family: 'Roboto Mono', monospace;
+  font-family: Peachi-bold, serif;
   font-size: 12pt;
   cursor: pointer;
   padding: 12px;
@@ -81,14 +86,41 @@ body, #root, .grid {
   border-radius: 15px;
 }
 
-.timeTextPlay {
-  font-family: 'Roboto Mono', monospace;
+.time-text-play {
+  font-family: Peachi-bold, serif;
   font-size: 40pt;
 }
 
-.timeTextPlayVert {
-  font-family: 'Roboto Mono', monospace;
+.time-button-play {
+  font-size: 20pt;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 25px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.time-text-play-vert {
+  font-family: Peachi-bold, serif;
   font-size: 12pt;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  margin: 25px 0;
+}
+
+.sidebar-menu-open {
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-menu-closed {
+  transition: all 0.3s ease-in-out;
+}
+
+.start-btn {
+  margin: 40px 0;
+}
+
+.about-block {
+  font-family: Peachi-bold, serif;
 }

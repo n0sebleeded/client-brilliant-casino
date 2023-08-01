@@ -6,9 +6,11 @@ import MainPage from "./components/MainPage";
 import { Route, Routes } from "react-router-dom";
 import AboutBlock from "./components/AboutBlock";
 import LoginPage from "./components/LoginPage";
-import MainPlayMenu from "./components/MainPlayMenu";
+import SidePlayBar from "./components/SidePlayBar";
+import Game from "./components/Game";
 
 function App() {
+
   return (
           <Routes>
               <Route path="/" element={<Header />} >
@@ -16,7 +18,9 @@ function App() {
                   <Route path="about" element={<AboutBlock />} />
                   <Route path="log" element={<LoginPage />} />
               </Route>
-              <Route path="/play" element={<MainPlayMenu />}/>
+              <Route path="/play" element={<SidePlayBar />}>
+                  <Route index element={<Game />} />
+              </Route>
           </Routes>
   );
 }

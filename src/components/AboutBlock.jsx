@@ -9,6 +9,7 @@ const AboutBlock = () => {
         <>
             <Box gridArea="leftmain" background="#E1CE87" justify="center" align="center">
                 <AnimatedText
+                    className="about-block"
                     color="#8d7a2f"
                     style={{margin: "0 15%"}}
                     layout
@@ -20,6 +21,7 @@ const AboutBlock = () => {
                     Backend dev.
                 </AnimatedText>
                 <AnimatedText
+                    className="about-block"
                     color="black"
                     style={{margin: "0 15%"}}
                     layout
@@ -31,6 +33,7 @@ const AboutBlock = () => {
                     Vitaliy Kuksa
                 </AnimatedText>
                 <AnimatedText
+                    className="about-block"
                     color="#8d7a2f"
                     style={{margin: "0 15%", fontSize: "14pt"}}
                     layout
@@ -44,6 +47,7 @@ const AboutBlock = () => {
             </Box>
             <Box gridArea="main" background="black" justify="center" align="center">
                 <AnimatedText
+                    className="about-block"
                     color="#353535"
                     style={{margin: "0 15%"}}
                     layout
@@ -55,6 +59,7 @@ const AboutBlock = () => {
                     Frontend dev.
                 </AnimatedText>
                 <AnimatedText
+                    className="about-block"
                     color="white"
                     style={{margin: "0 15%"}}
                     layout
@@ -66,6 +71,7 @@ const AboutBlock = () => {
                     Danil Akhunzianov
                 </AnimatedText>
                 <AnimatedText
+                    className="about-block"
                     color="#353535"
                     style={{margin: "0 15%", fontSize: "14pt"}}
                     layout
