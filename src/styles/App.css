@@ -124,3 +124,57 @@ body, #root, .grid {
 .about-block {
   font-family: Peachi-bold, serif;
 }
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.not-found-link {
+  font-family: Peachi-bold, serif;
+  font-size: 25pt;
+  color: #E1CE87;
+  text-decoration: none;
+}
+
+.not-found-text {
+  font-family: Peachi-bold, serif;
+  font-size: 50pt;
+  margin: 0;
+  color: #8d7a2f;
+}
+
+.alert {
+  position: absolute;
+  top: 15vh;
+  font-family: Peachi-bold, serif;
+  font-size: 15pt;
+  margin: 10px 10px;
+  background-color: rgba(139, 0, 0, 0.71);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
