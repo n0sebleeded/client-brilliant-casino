@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 const InputForm = () => {
 
-    const RegLink = motion(Link);
     const [value, setValue] = useState({ name: '', pass: '' });
     const handleSubmit = (event) => {
         event.preventDefault(); // Prevents default form submission behavior
@@ -88,16 +87,24 @@ const InputForm = () => {
                         >
                             login
                         </motion.button>
-                        <RegLink
-                            to = "/reg"
-                            className="btn"
+                        <motion.button
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 2.5 }}
+                            className="btn"
                         >
-                            register
-                        </RegLink>
+                            <Link
+                                to = "/reg"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 2.5 }}
+                                style={{textDecoration: "none", color: "white"}}
+                            >
+                                register
+                            </Link>
+                        </motion.button>
                     </Box>
                 </Form>
             </motion.div>

@@ -1,15 +1,18 @@
 import React from 'react';
 import blob from '../blobanimation.svg'
-import {Image} from "grommet";
 
 const RegPage = () => {
     return (
         <div style={{
             backgroundColor: "black",
             height: "100vh",
-            width: "100vw"
+            width: "100vw",
+            display: "flex",
+            alignItems: "center",
         }}>
-           <Image src={blob} alt="blob" style={{height: "80%"}}></Image>
+           <img src={blob} alt="blob" style={{
+               height: "80%",
+           }}></img>
         </div>
     );
 };
