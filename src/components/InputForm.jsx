@@ -4,20 +4,15 @@ import { motion } from 'framer-motion';
 import visible from '../visible.svg';
 import closed from '../closed.svg';
 import ShowError from "./ShowError";
+import { Link } from "react-router-dom";
 
 const InputForm = () => {
-    const regularExpressionPass = /^(?=.*[0-9])[a-zA-Z0-9]{8,16}$/;
-    const regularExpressionName = /^(?=.*[0-9])[a-z]{6,16}$/;
+
+    const RegLink = motion(Link);
     const [value, setValue] = useState({ name: '', pass: '' });
-    const [errorMessage, setErrorMessage] = useState(false);
     const handleSubmit = (event) => {
         event.preventDefault(); // Prevents default form submission behavior
         console.log(value);
-        if (!regularExpressionPass.test(value.pass)) {
-            setErrorMessage(true);
-        } else {
-            setErrorMessage(false);
-        }
         setValue({ name: '', pass: '' });
     };
 
@@ -29,7 +24,7 @@ const InputForm = () => {
 
     return (
         <>
-            <ShowError hasError={errorMessage}/>
+            {/*<ShowError hasError={}/> future realisation login or password error */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -93,8 +88,8 @@ const InputForm = () => {
                         >
                             login
                         </motion.button>
-                        <motion.button
-                            type="submit"
+                        <RegLink
+                            to = "/reg"
                             className="btn"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -102,7 +97,7 @@ const InputForm = () => {
                             transition={{ duration: 2.5 }}
                         >
                             register
-                        </motion.button>
+                        </RegLink>
                     </Box>
                 </Form>
             </motion.div>

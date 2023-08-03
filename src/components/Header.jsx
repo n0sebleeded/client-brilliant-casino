@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResponsiveImage, ResponsiveText } from "./mediaComponent";
+import { ResponsiveImage, ResponsiveLink } from "./mediaComponent";
 import logo from "../logo.svg";
 import { Box } from "grommet";
 import { NavLink, Outlet } from "react-router-dom";
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import GridStyled from "./GridStyled";
 
 const Header = () => {
-    const AnimatedRespText = motion(ResponsiveText);
+    const AnimatedRespLink = motion(ResponsiveLink);
     const AnimatedRespImg = motion(ResponsiveImage);
     const AnimatedNavLinks = motion(NavLink);
 
@@ -22,9 +22,10 @@ const Header = () => {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 2.5 }}
                 />
-                <AnimatedRespText
+                <AnimatedRespLink
+                    to="/"
                     size="3xl"
-                    style={{fontFamily: 'Peachi-bold, serif', fontWeight: '600'}}
+                    style={{fontFamily: 'Peachi-bold, serif', fontWeight: '600', textDecoration: 'none'}}
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -32,7 +33,7 @@ const Header = () => {
                     transition={{ duration: 2.5 }}
                 >
                     Brilliant
-                </AnimatedRespText>
+                </AnimatedRespLink>
             </Box>
             <Box gridArea="rightHeader" background="black" direction="row" justify="end" align="center">
                 <AnimatedNavLinks

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Text, Image } from "grommet";
+import {Link} from "react-router-dom";
 
-const ResponsiveText = styled(Text)`
+const ResponsiveLink = styled(Link)`
   @media(min-width: 760px) {
     font-size: 30pt;
     color: black;
@@ -49,4 +50,4 @@ const MainText = styled(Text)`
     line-height: normal;
   }`
 
-export { ResponsiveText, ResponsiveImage, FooterText, MainText }
+export { ResponsiveLink, ResponsiveImage, FooterText, MainText }

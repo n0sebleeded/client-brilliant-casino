@@ -9,6 +9,7 @@ import LoginPage from "./components/LoginPage";
 import SidePlayBar from "./components/SidePlayBar";
 import Game from "./components/Game";
 import NotFound from "./components/NotFound";
+import RegPage from "./components/RegPage";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
                   <Route path="about" element={<AboutBlock />} />
                   <Route path="log" element={<LoginPage />} />
               </Route>
+              <Route path="/reg" element={<RegPage />}></Route>
               <Route path="/play" element={<SidePlayBar />}>
                   <Route index element={<Game />} />
               </Route>

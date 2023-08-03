@@ -69,7 +69,7 @@ body, #root, .grid {
   border-bottom: none !important;
 }
 
-.btn {
+.btn, .btn-reg {
   background-color: transparent;
   border: solid 1px transparent;
   font-family: Peachi-bold, serif;
@@ -78,6 +78,7 @@ body, #root, .grid {
   padding: 12px;
   border-radius: 25px;
   color: white;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -161,20 +162,33 @@ body, #root, .grid {
   color: white;
 }
 
-.alert-enter {
+.alert-username {
+  position: absolute;
+  bottom: 5vh;
+  font-family: Peachi-bold, serif;
+  font-size: 15pt;
+  margin: 10px 10px;
+  background-color: rgba(139, 0, 0, 0.71);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.alert-enter, .alert-username-enter {
   opacity: 0;
   transform: scale(0.9);
 }
-.alert-enter-active {
+.alert-enter-active, .alert-username-enter-active {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 300ms, transform 300ms;
 }
-.alert-exit {
+.alert-exit, .alert-username-exit {
   opacity: 1;
 }
-.alert-exit-active {
+.alert-exit-active, .alert-username-exit-active {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
+

@@ -13,10 +13,7 @@ const ShowError = (props) => {
                 unmountOnExit
             >
                 <div className="alert" ref={ref}>
-                    Your password must contain:
-                    <li>8-16 characters</li>
-                    <li>Letters</li>
-                    <li>Numbers</li>
+                    Your password or username not correct!
                 </div>
             </CSSTransition>
         )
