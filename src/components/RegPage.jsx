@@ -1,18 +1,14 @@
 import React from 'react';
-import blob from '../blobanimation.svg'
+import Blob from './Blob';
+import RegForm from "./RegForm";
 
 const RegPage = () => {
     return (
-        <div style={{
-            backgroundColor: "black",
-            height: "100vh",
-            width: "100vw",
-            display: "flex",
-            alignItems: "center",
-        }}>
-           <img src={blob} alt="blob" style={{
-               height: "80%",
-           }}></img>
+        <div className="reg-page">
+            <Blob />
+            <div style={{display: "flex", alignItems: "center", justifyContent: "center", width: "30%"}}>
+                <RegForm />
+            </div>
         </div>
     );
 };

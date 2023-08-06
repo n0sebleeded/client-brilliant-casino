@@ -13,18 +13,12 @@ body, #root, .grid {
 
 .service-name {
   color: black;
-  font-family: Peachi-bold, serif;
   font-size: 30pt;
 }
 
 .description-text {
   color: whitesmoke;
-  font-family: Peachi-bold, serif;
   font-size: 10pt;
-}
-
-.links {
-  font-family: Peachi-bold, serif;
 }
 
 .links:hover {
@@ -64,7 +58,6 @@ body, #root, .grid {
 }
 
 .form_field input{
-  font-family: Peachi-bold, serif;
   font-size: 12pt;
   border-bottom: none !important;
 }
@@ -72,7 +65,6 @@ body, #root, .grid {
 .btn, .btn-reg {
   background-color: transparent;
   border: solid 1px transparent;
-  font-family: Peachi-bold, serif;
   font-size: 12pt;
   cursor: pointer;
   padding: 12px;
@@ -88,7 +80,6 @@ body, #root, .grid {
 }
 
 .time-text-play {
-  font-family: Peachi-bold, serif;
   font-size: 40pt;
 }
 
@@ -103,7 +94,6 @@ body, #root, .grid {
 }
 
 .time-text-play-vert {
-  font-family: Peachi-bold, serif;
   font-size: 12pt;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -122,10 +112,6 @@ body, #root, .grid {
   margin: 40px 0;
 }
 
-.about-block {
-  font-family: Peachi-bold, serif;
-}
-
 .not-found {
   display: flex;
   justify-content: center;
@@ -137,14 +123,12 @@ body, #root, .grid {
 }
 
 .not-found-link {
-  font-family: Peachi-bold, serif;
   font-size: 25pt;
   color: #E1CE87;
   text-decoration: none;
 }
 
 .not-found-text {
-  font-family: Peachi-bold, serif;
   font-size: 50pt;
   margin: 0;
   color: #8d7a2f;
@@ -153,7 +137,6 @@ body, #root, .grid {
 .alert {
   position: absolute;
   top: 15vh;
-  font-family: Peachi-bold, serif;
   font-size: 15pt;
   margin: 10px 10px;
   background-color: rgba(139, 0, 0, 0.71);
@@ -165,7 +148,6 @@ body, #root, .grid {
 .alert-username {
   position: absolute;
   bottom: 5vh;
-  font-family: Peachi-bold, serif;
   font-size: 15pt;
   margin: 10px 10px;
   background-color: rgba(139, 0, 0, 0.71);
@@ -192,3 +174,44 @@ body, #root, .grid {
   transition: opacity 300ms, transform 300ms;
 }
 
+.reg-page {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E1CE87;
+}
+
+.blob {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.reg-form {
+  display: block;
+  text-align: center;
+}
+
+.field-reg-form {
+  margin: 5% 0;
+  font-size: 25pt;
+}
+
+.input-reg-form {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 20pt;
+  width: 70%;
+}
+
+.log-page-font, .reg-page, .not-found-link, .service-name,
+.alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
+.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text   {
+  font-family: Peachi-bold, serif;
+}
