@@ -30,6 +30,7 @@ const RegForm = () => {
             onChange={(nextValue) => setFormData(nextValue)}
             onReset={() => setFormData({ username: '', password: '', email: ''})}
             onSubmit={handleSubmit}
+            className="reg-form"
         >
             <FormFieldGroup
                 name="username"

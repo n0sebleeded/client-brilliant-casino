@@ -1,6 +1,6 @@
 import React from 'react';
-import { ResponsiveImage, ResponsiveLink } from "./mediaComponent";
-import logo from "../logo.svg";
+import { ResponsiveImage, ResponsiveLink } from "../mediaComponent";
+import logo from "../../../logo.svg";
 import { Box } from "grommet";
 import { NavLink, Outlet } from "react-router-dom";
 import { motion } from "framer-motion";

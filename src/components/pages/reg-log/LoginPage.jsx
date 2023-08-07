@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box } from "grommet";
 import InputForm from "./InputForm";
-import CardGroup from "./CardGroup";
+import CardGroup from "../base/CardGroup";
 import { motion } from "framer-motion";
-import { FooterText } from "./mediaComponent";
+import { FooterText } from "../mediaComponent";
 
 
 

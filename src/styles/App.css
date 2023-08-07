@@ -181,33 +181,13 @@ body, #root, .grid {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #E1CE87;
-}
-
-.blob {
-  width: 50vw;
-  display: flex;
-  align-items: center;
+  color: #463131;;
 }
 
 .reg-form {
-  display: block;
-  text-align: center;
-}
-
-.field-reg-form {
-  margin: 5% 0;
-  font-size: 25pt;
-}
-
-.input-reg-form {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  border-bottom: 2px solid white;
-  color: white;
-  font-size: 20pt;
-  width: 70%;
+  background-color: rgba(204, 202, 218, 0.56);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .log-page-font, .reg-page, .not-found-link, .service-name,

@@ -1,4 +1,4 @@
-import { MainText } from "./mediaComponent";
+import { MainText } from "../mediaComponent";
 import { Box } from "grommet";
 import { motion } from "framer-motion";
 

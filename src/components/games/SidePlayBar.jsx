@@ -1,5 +1,5 @@
 import {Box, Grid, Text} from "grommet";
-import '../styles/App.css';
+import '../../styles/App.css';
 import React, { useState } from "react";
 import {Outlet} from "react-router-dom";
 

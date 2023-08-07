@@ -1,10 +1,10 @@
-import { FooterText, MainText } from "./mediaComponent";
+import { FooterText, MainText } from "../mediaComponent";
 import { Box } from "grommet";
 import CardGroup from "./CardGroup";
 import { motion } from "framer-motion";
-import '../styles/App.css';
-import StartBtn from "./btn/StartBtn";
-import '../styles/Button.sass';
+import '../../../styles/App.css';
+import StartBtn from "../../btn/StartBtn";
+import '../../../styles/Button.sass';
 
 const MainPage = () => {
 
