@@ -215,3 +215,8 @@ body, #root, .grid {
 .time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text   {
   font-family: Peachi-bold, serif;
 }
+
+.background {
+  height: 100vh;
+  width: 100vw;
+}
