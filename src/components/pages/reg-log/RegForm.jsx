@@ -1,72 +1,77 @@
 import React, { useState } from 'react';
-import { Box, Form } from "grommet";
-import { motion } from "framer-motion";
-import FormFieldGroup from "./FormFieldGroup";
+import UserForm from "./UserForm";
+import PassForm from "./PassForm";
+import EmailForm from "./EmailForm";
 
 const RegForm = () => {
+    const [currentStep, setCurrentStep] = useState(1);
     const [formData, setFormData] = useState({
         username: '',
         email: '',
         password: '',
-        passwordConfirm: ''
     });
+
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleEnterKeyPress = (event) => {
+        console.log(currentStep);
+        if (event.key === 'Enter') {
+            console.log(formData)
+            if (currentStep === 1) {
+                setCurrentStep(2);
+            } else if (currentStep === 2) {
+                setCurrentStep(3);
+            }
+        }
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        if (event.key === 'Enter') {
+            console.log(formData);
+            setFormData({
+                username: '',
+                email: '',
+                password: '',
+            });
+            setCurrentStep(1); // Сбрасываем текущий шаг после отправки формы
+        }
         // Здесь можно добавить логику отправки данных на сервер или их обработки
-        console.log(formData);
-        setFormData({
-            username: '',
-            email: '',
-            password: '',
-            passwordConfirm: ''
-        })
     };
+
     return (
-        <Form
-            style={{ scale: '150%' }}
-            justify="center"
-            value={formData}
-            onChange={(nextValue) => setFormData(nextValue)}
-            onReset={() => setFormData({ username: '', password: '', email: ''})}
-            onSubmit={handleSubmit}
-            className="reg-form"
-        >
-            <FormFieldGroup
-                name="username"
-                id="text-input-id"
-                label="Enter nickname"
-            />
-            <FormFieldGroup
-                name="email"
-                id="email-input-id"
-                label="Enter email"
-            />
-            <FormFieldGroup
-                name="password"
-                id="pass-input-id"
-                label="Enter password"
-                pass={true}
-            />
-            <FormFieldGroup
-                name="passwordConfirm"
-                id="passConf-input-id"
-                label="Confirm password"
-                pass={true}
-            />
-            <Box direction="row" gap="medium" justify="center">
-                <motion.button
-                    type="submit"
-                    className="btn"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
-                >
-                    register
-                </motion.button>
-            </Box>
-        </Form>
+        <div>
+            {currentStep === 1 && (
+                <UserForm
+                    value={formData.username}
+                    onChange={handleChange}
+                    onKeyPress={handleEnterKeyPress}
+                    name="username"
+                />
+            )}
+            {currentStep === 2 && (
+                <PassForm
+                    value={formData.password}
+                    onChange={handleChange}
+                    onKeyPress={handleEnterKeyPress}
+                    name="password"
+                />
+            )}
+            {currentStep === 3 && (
+                <EmailForm
+                    value={formData.email}
+                    onChange={handleChange}
+                    onKeyPress={handleSubmit}
+                    name="email"
+                />
+            )}
+        </div>
     );
 };
 

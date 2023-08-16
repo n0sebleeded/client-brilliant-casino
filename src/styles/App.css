@@ -184,19 +184,33 @@ body, #root, .grid {
   color: #463131;;
 }
 
-.reg-form {
-  background-color: rgba(204, 202, 218, 0.56);
-  padding: 15px;
-  border-radius: 5px;
-}
-
 .log-page-font, .reg-page, .not-found-link, .service-name,
 .alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
-.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text   {
+.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text, .input-reg   {
   font-family: Peachi-bold, serif;
 }
 
 .background {
   height: 100vh;
   width: 100vw;
+}
+
+.reg-form {
+  font-size: 20pt;
+  color: whitesmoke;
+  width: 70vw;
+  height: 40vh;
+}
+
+.input-reg {
+  font-size: 25pt;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  border-bottom: solid 2px white;
+  color: whitesmoke;
+  outline: none;
+  margin-left: 2vw;
+  width: 68vw;
+  margin-top: 2vh;
 }
