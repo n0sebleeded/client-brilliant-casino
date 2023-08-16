@@ -20,9 +20,7 @@ const RegForm = () => {
     };
 
     const handleEnterKeyPress = (event) => {
-        console.log(currentStep);
         if (event.key === 'Enter') {
-            console.log(formData)
             if (currentStep === 1) {
                 setCurrentStep(2);
             } else if (currentStep === 2) {
@@ -32,7 +30,6 @@ const RegForm = () => {
     };
 
     const handleSubmit = (event) => {
-        event.preventDefault();
         if (event.key === 'Enter') {
             console.log(formData);
             setFormData({
