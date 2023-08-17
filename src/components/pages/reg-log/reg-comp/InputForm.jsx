@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Form } from 'grommet';
 import { motion } from 'framer-motion';
-import ShowError from "../ShowError";
+import ShowError from "../../ShowError";
 import { Link } from "react-router-dom";
-import FormFieldGroup from "./FormFieldGroup";
+import FormFieldGroup from "../FormFieldGroup";
 
 const InputForm = () => {
 

@@ -9,7 +9,7 @@ import LoginPage from "./components/pages/reg-log/LoginPage";
 import SidePlayBar from "./components/games/SidePlayBar";
 import Game from "./components/games/Game";
 import NotFound from "./components/pages/NotFound";
-import RegPage from "./components/pages/reg-log/RegPage";
+import RegPage from "./components/pages/reg-log/reg-comp/RegPage";
 
 function App() {
 

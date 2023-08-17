@@ -156,19 +156,19 @@ body, #root, .grid {
   color: white;
 }
 
-.alert-enter, .alert-username-enter {
+.alert-enter, .alert-username-enter, .reg-form-enter {
   opacity: 0;
   transform: scale(0.9);
 }
-.alert-enter-active, .alert-username-enter-active {
+.alert-enter-active, .alert-username-enter-active, .reg-form-enter-active {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 300ms, transform 300ms;
 }
-.alert-exit, .alert-username-exit {
+.alert-exit, .alert-username-exit, .reg-form-exit {
   opacity: 1;
 }
-.alert-exit-active, .alert-username-exit-active {
+.alert-exit-active, .alert-username-exit-active, .reg-form-exit-active {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
@@ -186,7 +186,7 @@ body, #root, .grid {
 
 .log-page-font, .reg-page, .not-found-link, .service-name,
 .alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
-.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text, .input-reg   {
+.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text  {
   font-family: Peachi-bold, serif;
 }
 
@@ -196,13 +196,15 @@ body, #root, .grid {
 }
 
 .reg-form {
-  font-size: 20pt;
+  font-size: 25pt;
   color: whitesmoke;
   width: 70vw;
   height: 40vh;
+  font-family: 'Playfair Display', serif;
 }
 
 .input-reg {
+  font-family: 'Playfair Display', serif;
   font-size: 25pt;
   background-color: transparent;
   text-decoration: none;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import UserForm from "./UserForm";
 import PassForm from "./PassForm";
 import EmailForm from "./EmailForm";
+import WelcomePage from "./WelcomePage";
 
 const RegForm = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -37,7 +38,7 @@ const RegForm = () => {
                 email: '',
                 password: '',
             });
-            setCurrentStep(1); // Сбрасываем текущий шаг после отправки формы
+            setCurrentStep(4); // Сбрасываем текущий шаг после отправки формы
         }
         // Здесь можно добавить логику отправки данных на сервер или их обработки
     };
@@ -50,6 +51,7 @@ const RegForm = () => {
                     onChange={handleChange}
                     onKeyPress={handleEnterKeyPress}
                     name="username"
+                    currentStep={currentStep}
                 />
             )}
             {currentStep === 2 && (
@@ -67,6 +69,9 @@ const RegForm = () => {
                     onKeyPress={handleSubmit}
                     name="email"
                 />
+            )}
+            {currentStep === 4 && (
+                <WelcomePage currentStep={currentStep} />
             )}
         </div>
     );
