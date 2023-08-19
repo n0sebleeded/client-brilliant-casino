@@ -216,3 +216,24 @@ body, #root, .grid {
   width: 68vw;
   margin-top: 2vh;
 }
+
+.back-arrow {
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: whitesmoke;
+  transition: opacity 500ms;
+  opacity: 0.1;
+  text-decoration: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.back-arrow:hover {
+  transition: opacity 500ms;
+  opacity: 0.5;
+}

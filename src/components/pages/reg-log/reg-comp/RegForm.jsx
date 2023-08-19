@@ -4,6 +4,7 @@ import PassForm from "./PassForm";
 import {AnimatePresence} from "framer-motion";
 import EmailForm from "./EmailForm";
 import WelcomePage from "./WelcomePage";
+import {Link} from "react-router-dom";
 
 const RegForm = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -45,6 +46,16 @@ const RegForm = () => {
 
     return (
         <>
+            <div>
+                {currentStep === 1 &&
+                    <Link to="/log" className="back-arrow">←</Link>
+                }
+                {currentStep > 1 &&
+                    <p className="back-arrow" onClick={() => {
+                        setCurrentStep((prevState) => prevState -= 1);
+                    }}>←</p>
+                }
+            </div>
             <AnimatePresence>
                 {currentStep === 1 &&
                     <UserForm
