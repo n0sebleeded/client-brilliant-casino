@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import UserForm from "./UserForm";
 import PassForm from "./PassForm";
+import {AnimatePresence} from "framer-motion";
 import EmailForm from "./EmailForm";
 import WelcomePage from "./WelcomePage";
 
@@ -22,10 +23,8 @@ const RegForm = () => {
 
     const handleEnterKeyPress = (event) => {
         if (event.key === 'Enter') {
-            if (currentStep === 1) {
-                setCurrentStep(2);
-            } else if (currentStep === 2) {
-                setCurrentStep(3);
+            if (currentStep < 4) {
+                setCurrentStep((prevState) => prevState += 1);
             }
         }
     };
@@ -38,42 +37,48 @@ const RegForm = () => {
                 email: '',
                 password: '',
             });
-            setCurrentStep(4); // Сбрасываем текущий шаг после отправки формы
+            setCurrentStep(4);
         }
         // Здесь можно добавить логику отправки данных на сервер или их обработки
     };
 
+
     return (
-        <div>
-            {currentStep === 1 && (
-                <UserForm
-                    value={formData.username}
-                    onChange={handleChange}
-                    onKeyPress={handleEnterKeyPress}
-                    name="username"
-                    currentStep={currentStep}
-                />
-            )}
-            {currentStep === 2 && (
-                <PassForm
-                    value={formData.password}
-                    onChange={handleChange}
-                    onKeyPress={handleEnterKeyPress}
-                    name="password"
-                />
-            )}
-            {currentStep === 3 && (
-                <EmailForm
-                    value={formData.email}
-                    onChange={handleChange}
-                    onKeyPress={handleSubmit}
-                    name="email"
-                />
-            )}
-            {currentStep === 4 && (
-                <WelcomePage currentStep={currentStep} />
-            )}
-        </div>
+        <>
+            <AnimatePresence>
+                {currentStep === 1 &&
+                    <UserForm
+                        value={formData.username}
+                        onChange={handleChange}
+                        onKeyPress={handleEnterKeyPress}
+                        name="username"
+                    />
+                }
+            </AnimatePresence>
+            <AnimatePresence>
+                {currentStep === 2 &&
+                    <PassForm
+                        value={formData.password}
+                        onChange={handleChange}
+                        onKeyPress={handleEnterKeyPress}
+                        name="password"
+                    />
+                }
+            </AnimatePresence>
+            <AnimatePresence>
+                {currentStep === 3 &&
+                    <EmailForm
+                        value={formData.email}
+                        onChange={handleChange}
+                        onKeyPress={handleSubmit}
+                        name="email"
+                    />
+                }
+            </AnimatePresence>
+            <AnimatePresence>
+                {currentStep === 4 && <WelcomePage />}
+            </AnimatePresence>
+        </>
     );
 };
 
