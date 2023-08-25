@@ -108,10 +108,6 @@ body, #root, .grid {
   transition: all 0.3s ease-in-out;
 }
 
-.start-btn {
-  margin: 40px 0;
-}
-
 .not-found {
   display: flex;
   justify-content: center;
@@ -236,4 +232,39 @@ body, #root, .grid {
 .back-arrow:hover {
   transition: opacity 500ms;
   opacity: 0.5;
+}
+
+@media only screen and (min-width: 960px) {
+  .login {
+    scale: 150%
+  }
+}
+@media only screen and (max-width: 960px) {
+  .login {
+    scale: 100%
+  }
+}
+@media only screen and (max-width: 640px) {
+  .login {
+    scale: 75%
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .btn-play {
+    scale: 100%;
+    margin: 40px 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .btn-play {
+    scale: 75%;
+    margin: 30px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .btn-play {
+    scale: 60%;
+    margin: 20px 0;
+  }
 }

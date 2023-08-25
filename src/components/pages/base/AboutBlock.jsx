@@ -1,9 +1,10 @@
-import { MainText } from "../mediaComponent";
+import {MailText, MainText} from "../mediaComponent";
 import { Box } from "grommet";
 import { motion } from "framer-motion";
 
 const AboutBlock = () => {
     const AnimatedText = motion(MainText);
+    const AnimatedMail = motion(MailText);
 
     return (
         <>
@@ -32,10 +33,10 @@ const AboutBlock = () => {
                 >
                     Vitaliy Kuksa
                 </AnimatedText>
-                <AnimatedText
+                <AnimatedMail
                     className="about-block"
                     color="#8d7a2f"
-                    style={{margin: "0 15%", fontSize: "14pt"}}
+                    style={{margin: "0 15%"}}
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -43,7 +44,7 @@ const AboutBlock = () => {
                     transition={{ duration: 1.5 }}
                 >
                     vkuksa.tech@outlook.com
-                </AnimatedText>
+                </AnimatedMail>
             </Box>
             <Box gridArea="main" background="black" justify="center" align="center">
                 <AnimatedText
@@ -70,10 +71,10 @@ const AboutBlock = () => {
                 >
                     Danil Akhunzianov
                 </AnimatedText>
-                <AnimatedText
+                <AnimatedMail
                     className="about-block"
                     color="#353535"
-                    style={{margin: "0 15%", fontSize: "14pt"}}
+                    style={{margin: "0 15%"}}
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -81,7 +82,7 @@ const AboutBlock = () => {
                     transition={{ duration: 1.5 }}
                 >
                     devDanilAkhunzianov@outlook.com
-                </AnimatedText>
+                </AnimatedMail>
             </Box>
         </>
     );

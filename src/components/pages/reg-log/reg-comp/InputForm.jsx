@@ -24,7 +24,7 @@ const InputForm = () => {
                 className="log-page-font"
             >
                 <Form
-                    style={{ scale: '150%' }}
+                    className="login"
                     justify="center"
                     value={value}
                     onChange={(nextValue) => setValue(nextValue)}

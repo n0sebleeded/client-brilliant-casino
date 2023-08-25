@@ -48,6 +48,20 @@ const MainText = styled(Text)`
   @media(max-width: 960px) {
     font-size: 16pt;
     line-height: normal;
+  }
+  @media(max-width: 768px) {
+    font-size: 12pt;
+    line-height: normal;
   }`
 
-export { ResponsiveLink, ResponsiveImage, FooterText, MainText }
+const MailText = styled(Text)`
+  @media(min-width: 960px) {
+    font-size: 14pt;
+    line-height: normal;
+  }
+  @media(max-width: 768px) {
+    font-size: 10pt;
+    line-height: normal;
+  }`
+
+export { ResponsiveLink, ResponsiveImage, FooterText, MainText, MailText }
