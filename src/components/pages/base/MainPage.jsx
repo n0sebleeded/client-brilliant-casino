@@ -21,7 +21,7 @@ const MainPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 2.5 }}
+                        transition={{ duration: 1 }}
                     >Pet project dedicated to creating a service for playing in a gambling games implemented on
                     </AnimatedText>
                     <AnimatedText
@@ -31,7 +31,7 @@ const MainPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 2.5 }}
+                        transition={{ duration: 1 }}
                     >
                         ASP.NET & REACTJS
                     </AnimatedText>
@@ -45,7 +45,7 @@ const MainPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 0.15 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 2.5 }}
+                        transition={{ duration: 1 }}
                     >
                         Gambling is a form of entertainment, but it can also be addictive. If you feel that your gambling is becoming a problem, or if you know someone who may have a gambling problem, please seek help.
                     </AnimatedFooterText>

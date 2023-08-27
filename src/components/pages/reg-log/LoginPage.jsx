@@ -23,7 +23,7 @@ const LoginPage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 0.5 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 1 }}
                 >
                     Gambling is a form of entertainment, but it can also be addictive. If you feel that your gambling is becoming a problem, or if you know someone who may have a gambling problem, please seek help.
                 </AnimatedFooterText>

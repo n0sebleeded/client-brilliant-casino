@@ -29,7 +29,7 @@ const AboutBlock = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                 >
                     Vitaliy Kuksa
                 </AnimatedText>
@@ -41,7 +41,7 @@ const AboutBlock = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                 >
                     vkuksa.tech@outlook.com
                 </AnimatedMail>
@@ -55,7 +55,7 @@ const AboutBlock = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 0.5 }}
                 >
                     Frontend dev.
                 </AnimatedText>
@@ -67,7 +67,7 @@ const AboutBlock = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                 >
                     Danil Akhunzianov
                 </AnimatedText>
@@ -79,7 +79,7 @@ const AboutBlock = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                 >
                     devDanilAkhunzianov@outlook.com
                 </AnimatedMail>

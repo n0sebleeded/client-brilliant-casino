@@ -20,7 +20,7 @@ const Header = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 1 }}
                 />
                 <AnimatedRespLink
                     to="/"
@@ -30,7 +30,7 @@ const Header = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 1 }}
                 >
                     Brilliant
                 </AnimatedRespLink>
@@ -43,7 +43,7 @@ const Header = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 1 }}
                 >
                     Sign in
                 </AnimatedNavLinks>
@@ -55,7 +55,7 @@ const Header = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 1 }}
                 >
                     Home
                 </AnimatedNavLinks>
@@ -67,7 +67,7 @@ const Header = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    transition={{ duration: 1 }}
                 >
                     About us
                 </AnimatedNavLinks>

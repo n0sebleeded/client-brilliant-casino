@@ -20,7 +20,7 @@ const InputForm = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 2.5 }}
+                transition={{ duration: 1 }}
                 className="log-page-font"
             >
                 <Form
@@ -49,7 +49,7 @@ const InputForm = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 2.5 }}
+                            transition={{ duration: 1 }}
                         >
                             login
                         </motion.button>
@@ -57,7 +57,7 @@ const InputForm = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 2.5 }}
+                            transition={{ duration: 1 }}
                             className="btn"
                         >
                             <Link
@@ -65,7 +65,7 @@ const InputForm = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 2.5 }}
+                                transition={{ duration: 1 }}
                                 style={{textDecoration: "none", color: "white"}}
                             >
                                 register
