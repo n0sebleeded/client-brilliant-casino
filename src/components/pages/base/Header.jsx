@@ -3,18 +3,13 @@ import { ResponsiveImage, ResponsiveLink } from "../mediaComponent";
 import logo from "../../../logo.svg";
 import { Box } from "grommet";
 import { NavLink, Outlet } from "react-router-dom";
-import { motion } from "framer-motion";
 import GridStyled from "./GridStyled";
 
 const Header = () => {
-    const AnimatedRespLink = motion(ResponsiveLink);
-    const AnimatedRespImg = motion(ResponsiveImage);
-    const AnimatedNavLinks = motion(NavLink);
-
     return (
         <GridStyled>
             <Box gridArea="leftHeader" background="#E1CE87" direction="row" align="center">
-                <AnimatedRespImg
+                <ResponsiveImage
                     src={logo}
                     layout
                     initial={{ opacity: 0 }}
@@ -22,7 +17,7 @@ const Header = () => {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1 }}
                 />
-                <AnimatedRespLink
+                <ResponsiveLink
                     to="/"
                     size="3xl"
                     style={{fontFamily: 'Peachi-bold, serif', fontWeight: '600', textDecoration: 'none'}}
@@ -33,10 +28,10 @@ const Header = () => {
                     transition={{ duration: 1 }}
                 >
                     Brilliant
-                </AnimatedRespLink>
+                </ResponsiveLink>
             </Box>
             <Box gridArea="rightHeader" background="black" direction="row" justify="end" align="center">
-                <AnimatedNavLinks
+                <NavLink
                     to="/log"
                     className="links"
                     layout
@@ -46,9 +41,9 @@ const Header = () => {
                     transition={{ duration: 1 }}
                 >
                     Sign in
-                </AnimatedNavLinks>
+                </NavLink>
 
-                <AnimatedNavLinks
+                <NavLink
                     to="/"
                     className="links"
                     layout
@@ -58,8 +53,8 @@ const Header = () => {
                     transition={{ duration: 1 }}
                 >
                     Home
-                </AnimatedNavLinks>
-                <AnimatedNavLinks
+                </NavLink>
+                <NavLink
                     to="/about"
                     className="links"
                     style={{marginRight: "15%", marginLeft: "1%"}}
@@ -70,7 +65,7 @@ const Header = () => {
                     transition={{ duration: 1 }}
                 >
                     About us
-                </AnimatedNavLinks>
+                </NavLink>
             </Box>
             <>
                 <Outlet />

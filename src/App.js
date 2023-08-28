@@ -24,7 +24,7 @@ function App() {
                     <Route path="about" element={<AboutBlock />} />
                     <Route path="log" element={<LoginPage />} />
                 </Route>
-                <Route path="/reg" element={<RegPage />}></Route>
+                <Route path="/reg" element={<RegPage />} />
                 <Route path="/play" element={<SidePlayBar />}>
                     <Route index element={<Game />} />
                 </Route>

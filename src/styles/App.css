@@ -3,6 +3,12 @@
   src: url("../fonts/Peachi-Bold.otf");
 }
 
+.log-page-font, .reg-page, .not-found-link, .service-name,
+.alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
+.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text, .styled-p, .mail-text  {
+  font-family: Peachi-bold, serif;
+}
+
 html, .App{
   height: 100%;
   background-color: white;
@@ -180,12 +186,6 @@ body, #root, .grid {
   color: #463131;;
 }
 
-.log-page-font, .reg-page, .not-found-link, .service-name,
-.alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
-.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text  {
-  font-family: Peachi-bold, serif;
-}
-
 .background {
   height: 100vh;
   width: 100vw;
@@ -269,22 +269,40 @@ body, #root, .grid {
   }
 }
 
-.slide-in {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  transform-origin: bottom;
+@media only screen and (min-width: 960px) {
+  .styled-p{
+    font-size: 28pt;
+    line-height: normal;
+  }
+  .mail-text {
+    font-size: 14pt;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .styled-p {
+    font-size: 16pt;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .styled-p {
+    font-size: 16pt;
+    line-height: normal;
+  }
+  .mail-text {
+    font-size: 10pt;
+    line-height: normal;
+  }
 }
 
-.slide-out {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  transform-origin: top;
+.styled-p{
+  margin: 0;
+  text-align: center;
+}
+
+.mail-text {
+  margin: 0;
+  text-align: center;
+  opacity: 0.3;
 }
