@@ -1,5 +1,5 @@
 import { Box } from "grommet";
-import DivMot from "./DivMot";
+import DivMot from "../other/DivMot";
 
 const AboutBlock = () => {
     return (

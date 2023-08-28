@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import visible from "../../../visible.svg";
-import closed from "../../../closed.svg";
+import visible from "../../../styles/svgs/visible.svg";
+import closed from "../../../styles/svgs/closed.svg";
 import { Button, TextInput, Image } from "grommet";
 
 const Eye = ({id, name, style}) => {

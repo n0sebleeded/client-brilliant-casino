@@ -1,11 +1,11 @@
 @font-face {
   font-family: Peachi-bold;
-  src: url("../fonts/Peachi-Bold.otf");
+  src: url("fonts/Peachi-Bold.otf");
 }
 
 .log-page-font, .reg-page, .not-found-link, .service-name,
 .alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
-.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text, .styled-p, .mail-text, .main-text  {
+.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text, .styled-p, .mail-text, .main-text, .nav-link  {
   font-family: Peachi-bold, serif;
 }
 
@@ -265,6 +265,15 @@ body, #root, .grid {
     margin: 1%;
     text-decoration: none;
   }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10%;
+  }
+  .nav-link {
+    font-size: 25pt;
+    color: black;
+  }
 }
 @media(min-width: 768px) {
   .links {
@@ -272,6 +281,15 @@ body, #root, .grid {
     color: white;
     margin: 1%;
     text-decoration: none;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
+  }
+  .nav-link {
+    font-size: 30pt;
+    color: black;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -287,6 +305,10 @@ body, #root, .grid {
     color: white;
     margin: 1%;
     text-decoration: none;
+  }
+  .nav-link {
+    font-size: 20pt;
+    color: black;
   }
 }
 
@@ -315,4 +337,9 @@ body, #root, .grid {
   cursor: default;
   color: #E1CE87;
   text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+
 }

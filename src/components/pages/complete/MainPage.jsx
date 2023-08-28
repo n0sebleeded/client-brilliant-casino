@@ -1,9 +1,9 @@
 import { Box } from "grommet";
-import CardGroup from "./CardGroup";
+import CardGroup from "../other/CardGroup";
 import '../../../styles/App.css';
 import StartBtn from "../../btn/StartBtn";
 import '../../../styles/Button.sass';
-import DivMot from "./DivMot";
+import DivMot from "../other/DivMot";
 
 const MainPage = () => {
     return (

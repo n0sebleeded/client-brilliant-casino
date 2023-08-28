@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box } from "grommet";
-import InputForm from "./reg-comp/InputForm";
-import CardGroup from "../base/CardGroup";
-import DivMot from "../base/DivMot";
+import InputForm from "../reg-log/reg-comp/InputForm";
+import CardGroup from "../other/CardGroup";
+import DivMot from "../other/DivMot";
 
 
 
