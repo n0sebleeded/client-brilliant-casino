@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Text, Image } from "grommet";
+import { Image } from "grommet";
 import {Link} from "react-router-dom";
 
 const ResponsiveLink = styled(Link)`
@@ -28,30 +28,4 @@ const ResponsiveImage = styled(Image)`
     margin-left: 10%;
   }`
 
-const FooterText = styled(Text)`
-  @media(min-width: 960px) {
-    font-size: 12pt;
-  }
-  @media(max-width: 960px) {
-    font-size: 10pt;
-  }
-  @media(max-width: 960px) {
-    font-size: 8pt;
-    line-height: 10px;
-  }`
-
-const MainText = styled(Text)`
-  @media(min-width: 960px) {
-    font-size: 28pt;
-    line-height: normal;
-  }
-  @media(max-width: 960px) {
-    font-size: 16pt;
-    line-height: normal;
-  }
-  @media(max-width: 768px) {
-    font-size: 12pt;
-    line-height: normal;
-  }`
-
-export { ResponsiveLink, ResponsiveImage, FooterText, MainText }
+export { ResponsiveLink, ResponsiveImage }
