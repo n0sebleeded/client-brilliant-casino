@@ -4,11 +4,11 @@ import { DepthOfField, EffectComposer } from "@react-three/postprocessing";
 import { Card } from "./Card";
 import { Canvas } from "@react-three/fiber";
 
-const CardGroup = ({preset}) => {
+const CardGroup = ({preset, color}) => {
     return (
         <>
-            <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 10], fov: 45, near: 0.01, far: 95 }}>
-                <spotLight position={[10, 20, 10]} penumbra={1} intensity={1} color="orange" />
+            <Canvas onCreated={state => state.gl.setClearColor(color)} gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 10], fov: 45, near: 0.01, far: 95 }}>
+            <spotLight position={[10, 20, 10]} penumbra={1} intensity={1} color="orange" />
                 <Environment preset={preset}/>
                 <Suspense>
                     <EffectComposer multisampling={3}>
