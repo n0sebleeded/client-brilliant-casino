@@ -5,6 +5,7 @@ import {AnimatePresence} from "framer-motion";
 import EmailForm from "./EmailForm";
 import WelcomePage from "./WelcomePage";
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 const RegForm = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -33,6 +34,16 @@ const RegForm = () => {
     const handleSubmit = (event) => {
         if (event.key === 'Enter') {
             console.log(formData);
+            axios.post('http://192.168.0.101/api/Player/CreatePlayer', {
+                username: formData.username,
+                password: formData.password
+            })
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
             setFormData({
                 username: '',
                 email: '',

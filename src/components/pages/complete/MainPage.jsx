@@ -4,8 +4,25 @@ import '../../../styles/App.css';
 import StartBtn from "../../btn/StartBtn";
 import '../../../styles/Button.sass';
 import DivMot from "../other/DivMot";
+import {useEffect} from "react";
+import axios from "axios";
 
 const MainPage = () => {
+
+    useEffect(() => {
+        // Выполнение GET-запроса при монтировании компонента
+        axios.get('http://192.168.0.101/api/WeatherForecast')
+            .then((response) => {
+                // Обработка успешного ответа от сервера
+                const fetchedPlayers = response.data; // Предполагается, что сервер возвращает данные в виде массива игроков
+                console.log(fetchedPlayers);
+            })
+            .catch((error) => {
+                // Обработка ошибок, если они возникнут
+                console.error(error);
+            });
+    }, []);
+
     return (
         <>
             <Box gridArea="leftmain" background="#E1CE87" justify="center" align="center">
