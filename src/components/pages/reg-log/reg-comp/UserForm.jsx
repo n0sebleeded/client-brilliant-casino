@@ -30,6 +30,10 @@ const UserForm = ({ onKeyPress, value, onChange, name }) => {
                         onChange={onChange}
                         name={name}
                     />
+                    <div className='condition'>
+                            <p>Username must contain:</p>
+                            <li>At least 5 characters</li>
+                        </div>
                 </motion.div>
             }
         </>

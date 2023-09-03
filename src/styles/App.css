@@ -343,3 +343,9 @@ body, #root, .grid {
   text-decoration: none;
 
 }
+
+.condition {
+  font-size: 20pt;
+  margin-top: 4em;
+  margin-left: 2em;
+}

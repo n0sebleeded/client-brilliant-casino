@@ -24,6 +24,11 @@ const PassForm = ({onKeyPress, value, onChange, name}) => {
                     <div className="reg-form">
                         <p> 2 → And your <b>password</b>*</p>
                         <input placeholder='Type your answere here' className="input-reg" onKeyPress={onKeyPress} value={value} onChange={onChange} name={name}/>
+                        <div className='condition'>
+                            <p>Password must contain:</p>
+                            <li>At least 8 characters</li>
+                            <li>At least 1 digit</li>
+                        </div>
                     </div>
                 </motion.div>
             }
