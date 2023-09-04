@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from "framer-motion";
-const UserForm = ({ onKeyPress, value, onChange, name }) => {
+import DivMotReg from "../DivMotReg.jsx";
+const UserForm = ({ onKeyPress, value, onChange, name, len }) => {
 
     const [show, setShow] = useState(false);
 
@@ -14,13 +14,7 @@ const UserForm = ({ onKeyPress, value, onChange, name }) => {
     return (
         <>
             {show &&
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -50}}
-                    transition={{ duration: 1 }}
-                    className="reg-form"
-                >
+                <DivMotReg className="reg-form">
                     <p> 1 → Let's start with your <b>username</b>*</p>
                     <input
                         placeholder="Type your answer here"
@@ -31,10 +25,12 @@ const UserForm = ({ onKeyPress, value, onChange, name }) => {
                         name={name}
                     />
                     <div className='condition'>
-                            <p>Username must contain:</p>
-                            <li>At least 5 characters</li>
-                        </div>
-                </motion.div>
+                        <p>Username must contain:</p>
+                        <ul>
+                            <li className={len >= 5 ? "condition-true" : "condition-false"}>At least 5 characters</li>
+                        </ul>
+                    </div>
+                </DivMotReg>
             }
         </>
     );

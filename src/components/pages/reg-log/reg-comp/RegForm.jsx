@@ -13,14 +13,25 @@ const RegForm = () => {
         username: '',
         email: '',
         password: '',
+        usernameLen: 0,
+        passwordLen: 0,
+        passwordHasDigit: false,
     });
 
     const handleChange = e => {
         const { name, value } = e.target;
         setFormData(prevState => ({
             ...prevState,
-            [name]: value
+            [name]: value,
+            [name + 'Len']: value.length
         }));
+        if (name === "password") {
+            setFormData(prevState => ({
+                ...prevState,
+                passwordHasDigit: /\d/.test(value)
+            }))
+        }
+        console.log(formData);
     };
 
     const handleEnterKeyPress = (event) => {
@@ -74,6 +85,7 @@ const RegForm = () => {
                         onChange={handleChange}
                         onKeyPress={handleEnterKeyPress}
                         name="username"
+                        len = {formData.usernameLen}
                     />
                 }
             </AnimatePresence>
@@ -84,6 +96,8 @@ const RegForm = () => {
                         onChange={handleChange}
                         onKeyPress={handleEnterKeyPress}
                         name="password"
+                        len = {formData.passwordLen}
+                        digit = {formData.passwordHasDigit}
                     />
                 }
             </AnimatePresence>
