@@ -54,16 +54,6 @@ body, #root, .grid {
   font-size: 40pt;
 }
 
-.time-button-play {
-  font-size: 20pt;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin: 25px 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .time-text-play-vert {
   font-size: 12pt;
   writing-mode: vertical-rl;
@@ -363,4 +353,20 @@ ul {
 .condition-false::before {
   content: "• ";
   color: red;
+}
+
+.button-play {
+  font-size: 20pt;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 0.5em 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-ico {
+  width: 2vw;
+  padding: 0;
+  margin: 0;
 }
