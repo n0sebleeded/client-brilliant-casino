@@ -355,14 +355,32 @@ ul {
   color: red;
 }
 
-.button-play {
+.open-button {
   font-size: 20pt;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin: 0.5em 0;
+  margin: 15px 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.close-button {
+  font-size: 20pt;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: gray;
+}
+
+.close-button:hover {
+  color: white;
+  transition: color 1s;
 }
 
 .nav-ico {

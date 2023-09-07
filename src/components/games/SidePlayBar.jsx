@@ -18,19 +18,24 @@ const SidePlayBar = () => {
                 fill
                 gap="0"
                 rows={["100vh"]}
-                columns={[isSideBarMenuOpen ? "10vw" : "4vw", isSideBarMenuOpen ? "90vw" : "96vw"]}
+                columns={[isSideBarMenuOpen ? "10vw" : "0vw", isSideBarMenuOpen ? "90vw" : "100vw"]}
                 className={isSideBarMenuOpen ? "sidebar-menu-open" : "sidebar-menu-closed"}
             >
                 <Box background="#E1CE87" justify="start" align="center">
-                    <button className="button-play" onClick={toggleSideBar}>≡</button>
-                    <button className="button-play" style={{marginTop: "10vh"}}>
+                    <button className="open-button" onClick={toggleSideBar}>×</button>
+                    <button className="open-button" style={{marginTop: "10vh"}}>
                         <img src="https://i.imgur.com/8IsBzIK.png" alt="roullete-ico" className="nav-ico"/>
                     </button>
-                    <button className="button-play">
+                    <button className="open-button">
                         <img src="https://i.imgur.com/ywmDa4W.png" alt="slots-ico" className="nav-ico"/>
                     </button>
                 </Box>
-                <Outlet />
+                <Box background="black" justify="center" align="center">
+                    {!isSideBarMenuOpen &&
+                        <button className="close-button" onClick={toggleSideBar}>≡</button>
+                    }
+                    <Outlet />
+                </Box>
             </Grid>
         </DivMot>
     );
