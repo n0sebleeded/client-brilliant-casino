@@ -384,7 +384,12 @@ ul {
 }
 
 .nav-ico {
-  width: 2vw;
+  width: 40px;
   padding: 0;
   margin: 0;
+}
+
+.game-name {
+  position: relative;
+  font-size: 10pt;
 }
