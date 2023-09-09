@@ -5,7 +5,8 @@
 
 .log-page-font, .reg-page, .not-found-link, .service-name,
 .alert-username, .alert, .not-found-text, .about-block, .time-text-play-vert,
-.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text, .styled-p, .mail-text, .main-text, .nav-link  {
+.time-text-play, .btn, .btn-reg, .form_field input, .links, .description-text,
+.styled-p, .mail-text, .main-text, .nav-link  {
   font-family: Peachi-bold, serif;
 }
 
@@ -356,10 +357,11 @@ ul {
 }
 
 .open-button {
+  display: flex;
   font-size: 20pt;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin: 15px 0;
+  margin: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -384,12 +386,20 @@ ul {
 }
 
 .nav-ico {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   width: 40px;
-  padding: 0;
+  padding: 15px;
   margin: 0;
 }
 
 .game-name {
   position: relative;
-  font-size: 10pt;
+  font-size: 15pt;
+  font-family: 'Playfair Display', serif;
+}
+
+.game-btn-block {
+  width: 10vw;
 }
