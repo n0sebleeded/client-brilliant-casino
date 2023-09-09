@@ -22,18 +22,31 @@ const SidePlayBar = () => {
             >
                 <Box background="#E1CE87" justify="start" align="start">
                     {/* need be centered!!! */}
-                    <button className="open-button" onClick={toggleSideBar}>×</button>
-                    <button className="open-button" style={{marginTop: "10vh"}}>
-                        <img src="https://i.imgur.com/8IsBzIK.png" alt="roullete-ico" className="nav-ico"/>
-                        {/* will be <p> */}
-                    </button>
-                    <button className="open-button">
-                        <img src="https://i.imgur.com/ywmDa4W.png" alt="slots-ico" className="nav-ico"/>
-                    </button>
+                    <button className="open-button" style={{position: "absolute", left: "8vw", top: "1vh"}} onClick={toggleSideBar}>×</button>
+                    <DivMot className="game-btn-block">
+                        <button className="open-button" style={{marginTop: "10vh"}}>
+                            <img src="https://i.imgur.com/8IsBzIK.png" alt="roullete-ico" className="nav-ico"/>
+                            <p className="game-name">roullete</p>
+                        </button>
+                    </DivMot>
+                    <DivMot className="game-btn-block">
+                        <button className="open-button">
+                            <img src="https://i.imgur.com/ywmDa4W.png" alt="slots-ico" className="nav-ico"/>
+                            <p className="game-name">slots</p>
+                        </button>
+                    </DivMot>
+                    <DivMot className="game-btn-block">
+                        <button className="open-button">
+                            <img src="https://i.imgur.com/LZZ6m23.png" alt="dice-shoot-ico" className="nav-ico"/>
+                            <p className="game-name">dice</p>
+                        </button>
+                    </DivMot>
                 </Box>
                 <Box background="black" justify="center" align="center">
                     {!isSideBarMenuOpen &&
-                        <button className="close-button" onClick={toggleSideBar}>≡</button>
+                        <DivMot>
+                            <button className="close-button" onClick={toggleSideBar}>≡</button>
+                        </DivMot>
                     }
                     <Outlet />
                 </Box>
