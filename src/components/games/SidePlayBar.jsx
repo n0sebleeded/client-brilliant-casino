@@ -21,7 +21,6 @@ const SidePlayBar = () => {
                 className={isSideBarMenuOpen ? "sidebar-menu-open" : "sidebar-menu-closed"}
             >
                 <Box background="#E1CE87" justify="start" align="start">
-                    {/* need be centered!!! */}
                     <button className="open-button" style={{position: "absolute", left: "8vw", top: "1vh"}} onClick={toggleSideBar}>×</button>
                     <DivMot className="game-btn-block">
                         <button className="open-button" style={{marginTop: "10vh"}}>
