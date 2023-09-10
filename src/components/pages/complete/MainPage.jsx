@@ -11,7 +11,7 @@ const MainPage = () => {
 
     useEffect(() => {
         // Выполнение GET-запроса при монтировании компонента
-        axios.get('https://catfact.ninja/fact?max_length=140')
+        axios.get('http://192.168.0.104/api/Player/AllPlayers')
             .then((response) => {
                 // Обработка успешного ответа от сервера
                 const fetchedPlayers = response.data; // Предполагается, что сервер возвращает данные в виде массива игроков

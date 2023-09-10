@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text } from "grommet";
+import Slots from "./slots/slots.jsx";
 
 const Game = () => {
     return (
-            <Text className="time-text-play"> FUTURE GAME REALISATION</Text>
+        <Slots />
     );
 };
 

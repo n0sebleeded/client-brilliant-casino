@@ -403,3 +403,27 @@ ul {
 .game-btn-block {
   width: 10vw;
 }
+
+.roll-btn {
+  border: none;
+  text-decoration: none;
+  font-size: 25pt;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.slots-item {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+  font-size: 20pt;
+  justify-content: center;
+  align-items: center;
+}
+
+.slots-container-item, .slots-container {
+  text-align: center;
+}
