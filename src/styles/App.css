@@ -422,8 +422,46 @@ ul {
   font-size: 20pt;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 10%;
 }
 
-.slots-container-item, .slots-container {
+.slots-container-item {
   text-align: center;
+  border: solid 1px white;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow:
+          inset 0 0 5px rgba(255, 255, 255, 0.56),      /* inner white */
+          inset 2px 0 8px rgba(255, 255, 255, 0.12),   /* inner left magenta short */
+          inset -5px 0 100px lavender,  /* inner right cyan short */
+          inset 5px 0 100px lavender,  /* inner left magenta broad */
+          inset 0 0 5px rgba(255, 255, 255, 0.12), /* inner right cyan broad */
+          0 0 50px rgb(255, 255, 255);            /* outer white */
+}
+
+.slots-container {
+  text-align: center;
+}
+
+.slots-el {
+  padding: 0;
+  margin: 0;
+}
+
+.slots-animation {
+  opacity: 0;
+}
+
+.slots-animation-enter {
+  opacity: 1;
+}
+
+.slots-animation-enter-active {
+  transform: translateX(-50%) translateY(-85%);
+}
+
+.slots-animation-enter-dont {
+  opacity: 0;
 }
